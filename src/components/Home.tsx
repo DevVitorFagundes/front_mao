@@ -5,7 +5,7 @@ import { Header } from '../components/Header'; // Importando o Header
 interface ServiceCardProps {
   $special?: boolean;
 }
-
+ 
 const Container = styled.div`
   font-family: 'Arial', sans-serif;
   margin: 0;
