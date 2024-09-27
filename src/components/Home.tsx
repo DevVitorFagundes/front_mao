@@ -23,7 +23,7 @@ const Home: React.FC = () => {
         {/* Imagem do Profissional */}
         <div className="absolute right-10 bottom-0">
           <img
-            src="/home1.png"
+            src="public\home1.png"
             alt="Profissional"
             className="w-[300px] lg:w-[400px] object-cover"
           />
