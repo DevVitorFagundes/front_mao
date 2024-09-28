@@ -23,49 +23,72 @@ const Home: React.FC = () => {
         {/* Imagem do Profissional */}
         <div className="absolute right-10 bottom-0">
           <img
-            src="public\home1.png"
+            src="./homeimg/home1.png"
             alt="Profissional"
-            className="w-[300px] lg:w-[400px] object-cover"
+            style={{ width: '210px', height: 'auto' }}
+            className="object-cover"
           />
         </div>
       </section>
 
       {/* Seção de Serviços */}
       <section className="py-16 text-center">
-        <h2 className="text-4xl font-bold mb-8">
-          Conheça os serviços que oferecemos a você!
-        </h2>
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="text-4xl font-bold mb-8">Conheça os serviços que oferecemos a você!</h2>
+
+        {/* Container da grade */}
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
           {/* Card de Serviço 1 */}
-          <div className="border p-8 rounded-lg shadow-md">
+          <div className="border p-8 rounded-lg shadow-md h-full">
             <h3 className="text-2xl font-semibold mb-4">Serviço de Encanamento</h3>
             <p className="text-gray-600 mb-4">texto texto</p>
-            <img src="1.png" alt="Icone de Encanamento" className="w-12 h-12 mx-auto mb-4" />
+            <img src="./homeimg/1.png" alt="Icone de Encanamento" className="w-12 h-12 mx-auto mb-4" />
           </div>
 
           {/* Card de Serviço 2 */}
-          <div className="border p-8 rounded-lg shadow-md">
+          <div className="border p-8 rounded-lg shadow-md h-full">
             <h3 className="text-2xl font-semibold mb-4">Serviços de Limpeza</h3>
             <p className="text-gray-600 mb-4">texto texto</p>
-            <img src="2.png" alt="Icone de Limpeza" className="w-12 h-12 mx-auto mb-4" />
+            <img src="./homeimg/2.png" alt="Icone de Limpeza" className="w-16 h-16 mx-auto mb-4" />
           </div>
 
           {/* Card de Serviço 3 */}
-          <div className="border p-8 rounded-lg shadow-md">
+          <div className="border p-8 rounded-lg shadow-md h-full">
             <h3 className="text-2xl font-semibold mb-4">Serviço de Pintura</h3>
             <p className="text-gray-600 mb-4">texto texto</p>
-            <img src="3.png" alt="Icone de Pintura" className="w-12 h-12 mx-auto mb-4" />
+            <img src="./homeimg/3.png" alt="Icone de Pintura" className="w-16 h-16 mx-auto mb-4" />
           </div>
 
           {/* Card de Serviço 4 */}
-          <div className="border p-8 rounded-lg shadow-md">
+          <div className="border p-8 rounded-lg shadow-md h-full">
             <h3 className="text-2xl font-semibold mb-4">Serviço de Manutenção</h3>
             <p className="text-gray-600 mb-4">texto texto</p>
-            <img src="4.png" alt="Icone de Manutenção" className="w-12 h-12 mx-auto mb-4" />
+            <img src="./homeimg/4.png" alt="Icone de Manutenção" className="w-16 h-16 mx-auto mb-4" />
+          </div>
+
+          {/* Card de Serviço 5 */}
+          <div className="border p-8 rounded-lg shadow-md h-full">
+            <h3 className="text-2xl font-semibold mb-4">Serviço de Manutenção</h3>
+            <p className="text-gray-600 mb-4">texto texto</p>
+            <img src="./homeimg/4.png" alt="Icone de Manutenção" className="w-16 h-16 mx-auto mb-4" />
+          </div>
+
+          {/* Card de Serviço 6 */}
+          <div className="border p-8 rounded-lg shadow-md h-full">
+            <h3 className="text-2xl font-semibold mb-4">Serviço de Manutenção</h3>
+            <p className="text-gray-600 mb-4">texto texto</p>
+            <img src="./homeimg/4.png" alt="Icone de Manutenção" className="w-16 h-16 mx-auto mb-4" />
+          </div>
+
+          {/* Card de Serviço 7 */}
+          <div className="border p-8 rounded-lg shadow-md h-full">
+            <h3 className="text-2xl font-semibold mb-4">Serviço de Manutenção</h3>
+            <p className="text-gray-600 mb-4">texto texto</p>
+            <img src="./homeimg/4.png" alt="Icone de Manutenção" className="w-16 h-16 mx-auto mb-4" />
           </div>
 
           {/* Card especial */}
-          <div className="border p-8 rounded-lg bg-yellow-500 text-white shadow-md">
+          <div className="border p-8 rounded-lg bg-yellow-500 text-white shadow-md h-full">
             <h3 className="text-2xl font-semibold mb-4">Não encontrou o que procurava?</h3>
             <Link href="/services">
               <button className="bg-blue-600 py-2 px-6 rounded-lg hover:bg-blue-700">
@@ -75,13 +98,6 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-8 text-center">
-        <p>
-          Nec sociosqu eu reiciendis esse fames nostrud habitasse! Purus imperdiet atque nulla? Aliquid, ullamcorper auctor?
-        </p>
-      </footer>
     </>
   );
 };
