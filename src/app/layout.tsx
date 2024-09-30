@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import Home from '@/components/Home';
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Mão na roda",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body>
         <Header />
         <Home />
+        <Footer />
         {children}
       </body>
     </html>
